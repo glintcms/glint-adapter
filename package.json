@@ -1,0 +1,30 @@
+{
+  "name": "glint-adapter",
+  "version": "1.0.0",
+  "description": "Data Object Adapter (aka Model)",
+  "author": "Andi Neck",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glintcms/glint-adapter.git"
+  },
+  "main": "index.js",
+  "browser": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "debug": "^2.0.0",
+    "inherits": "^2.0.1",
+    "sliced": "0.0.5",
+    "utils-merge": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/glintcms/glint-adapter/issues"
+  },
+  "homepage": "https://github.com/glintcms/glint-adapter",
+  "keywords": [
+    "glint",
+    "adapter"
+  ]
+}
