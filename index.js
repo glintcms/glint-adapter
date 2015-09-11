@@ -25,6 +25,8 @@ function Adapter(adapter) {
  */
 Adapter.prototype.api = Adapter.api = 'adapter';
 
+Adapter.prototype.name = Adapter.name = 'adapter';
+
 /**
  * Forward function calls to this Implementation
  */
@@ -71,7 +73,11 @@ Adapter.prototype.use = function (plugin) {
 Adapter.prototype.mixin = function (mixins) {
   var self = this;
   Object.keys(mixins).forEach(function (key) {
-    self[key] = mixins[key];
+    if (typeof self[key] === 'undefined') {
+      self[key] = mixins[key];
+    } else {
+      debug('mixin exists already:', key);
+    }
   });
   return this;
 };
