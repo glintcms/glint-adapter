@@ -1,7 +1,7 @@
 /**
  * Module dependencies.
  */
-var debug = require('debug')('glint:Adapter');
+var debug = require('debug')('glint-adapter');
 var EventEmitter = require('events').EventEmitter;
 var inherits = require('inherits');
 var slice = require('sliced');
